@@ -136,6 +136,53 @@ main > section{
     font-weight: 500;
 }
 
+
+/* feature related styles  */
+
+.features{
+    display: flex;
+    gap: 140px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px #727272;
+    margin-bottom: 20px;
+}
+
+.feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#Experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-img{
+        width: 100%;
+    }
+
+
+
 /* some facts related style  */
 
 .fact-container{
@@ -196,7 +243,8 @@ main > section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
 
@@ -209,7 +257,7 @@ main > section{
         margin-left:20px;
     }
 
-    .fact-container,{
+    .fact-container{
         justify-items: center;
         /* justify-items প্রতিটি grid item কে তার নিজের grid cell-এর ভিতরে left / center / right এ বসায়. Flexbox-এ কাজ করে না. justify-content container-এর ভিতরে সব items একসাথে কীভাবে বসবে সেটা নিয়ন্ত্রণ করে।  */
         gap: 24px;
@@ -225,6 +273,11 @@ main > section{
         margin: 50px auto;
         text-align: center;
     }
+
+    #Experience-badge{
+        margin-left: 50px;
+    }
+    
 
 }
 
@@ -248,6 +301,8 @@ main > section{
         justify-items: center;
         gap: 50px;
     }
+
+    
 
     
 }
